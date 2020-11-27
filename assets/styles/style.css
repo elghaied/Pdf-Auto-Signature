@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,121,9,1) 35%, rgba(0,212,255,1) 100%);
-    height: 3rem;
+    min-height: 3rem;
 }
 
 
@@ -23,12 +23,33 @@ header {
     font-family: LATO;
     color: orange;
     padding-left: 1rem;
+ 
 }
 
 .nav-links {
     text-decoration: none;
     color: white;
     padding: 0rem 2rem;
+    transition: 1s;
+}
+
+.nav-links:hover {
+  background-color: rgba(37, 37, 37, 0.377);
+  padding: 1rem;
+  transition: 1s;
+  /* color: #fff;
+  text-shadow: #fff 0 0 10px; */
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  }
+
+article {
+  padding: 2rem;
+}
+
+ul {
+  list-style: none;
+
 }
 
 main {
@@ -58,3 +79,51 @@ footer {
     text-align: center;
     
 }
+
+
+/* SIGN UP PAGE */
+.signup {
+  color : white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: larger;
+}
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+/* ALERT SECTION  */
+#alert {
+    transition: 2s;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: alerts;
+    animation-duration: 2s;
+  
+  }
+  
+  @keyframes alerts {
+    from{opacity: 0};
+    to{opacity: 100};
+  }
+  .red-alert {
+    background-color: rgba(192, 28, 28, 0.692);
+  }
+  .green-alert {
+    background-color: rgb(66, 180, 66);
+  }
+  .blue-alert {
+    background-color: skyblue;
+  }
+  
+  #error {
+    text-align: left;
+    display: block;
+  }
+  /* END OF ALERT  */
